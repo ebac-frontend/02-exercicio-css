@@ -1,0 +1,133 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body > header{  /*para aplicar a cor de fundo apenas no header principal (meu portal de notícias)*/
+    background-color: #193446;
+    padding: 16px 0;
+    color: #f5f6fa;
+}
+
+header .container{   /*para editar os elementos de economia, esportes, tecnologia e entreterimento*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /*para os elementos ficarem afastados do título da página*/
+}
+
+header li{    
+    display: inline; /*para aparecer os elementos do header em linha (economia, esportes, tecnologia e entreterimento)*/
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-left: 16px;
+}
+
+header li a{
+    color: #f5f6fa;
+    text-decoration: none;
+}
+
+.container{   
+    width: 1366px; /*width = largura*/
+    margin: 0 auto 0 auto; /*para centralizar o container na horizontal*/
+    /*regra sempre no sentido horário do relógio*/
+}
+
+.articles{
+    display: flex;
+    flex-wrap: wrap; /*para pular de linha quando não tiver mais espaço*/
+    justify-content: space-between; /*para dar espaço entre as notícias*/
+}
+
+.articles article img{
+    /*height: 180px; /*altura da imagem*/
+    width: 100%;
+}
+
+.articles article{
+    width: 30%; /*largura da imagem*/
+}
+
+section{
+    padding: 16px 0;
+}
+
+section h2, .articles article{
+    margin-bottom: 16px;
+}
+
+.articles article h3{
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.articles article a{
+    background-color: blue;  /*cor de fundo dos botões*/
+    color: #ffff;
+    padding: 8px; 
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+.articles article p, .articles article a{
+    font-family: Arial, Helvetica, sans-serif; /*para mudar a fonte dos textos e dos botões*/
+}
+
+.articles article h3{
+    font-size: 24px; /*tamanho da fonte dos títulos das notícias*/
+}
+
+section h2{
+    font-size: 32px;
+}
+
+#sports{
+    background-color: rgba(141, 187, 141, 0.199);
+}
+
+#sports .articles article a {
+    background-color: #295228;
+}
+
+#sports .articles article a:hover{  /*para trocar de cor quando apertar em "ler mais"*/
+    background-color: #b0b3bd;
+}
+
+#economy{
+    background-color: #dbe9f0c5;
+}
+
+#economy .articles article a{
+    background-color: #336586;
+}
+
+#economy .articles article a:hover{  /*para trocar de cor quando apertar em "ler mais"*/
+    background-color: #b0b3bd;
+}
+
+#tech{
+    background-color: #e4cdab11;
+}
+
+#tech .articles article a{
+    background-color: #e49c16;
+}
+
+#tech .articles article a:hover{  /*para trocar de cor quando apertar em "ler mais"*/
+    background-color: #b0b3bd;
+}
+
+#fun{
+    background-color: #e7e7e793;
+}
+
+#fun .articles article a{
+    background-color: #3f4244;
+}
+
+#fun .articles article a:hover{  /*para trocar de cor quando apertar em "ler mais"*/
+    background-color: #b0b3bd;
+}
