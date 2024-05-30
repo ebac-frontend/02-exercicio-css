@@ -6,7 +6,7 @@
 
 body > header{  /*para aplicar a cor de fundo apenas no header principal (meu portal de notícias)*/
     background-color: #193446;
-    padding: 16px 0;
+    padding: 35px 0;
     color: #f5f6fa;
 }
 
